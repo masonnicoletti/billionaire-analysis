@@ -5,3 +5,7 @@
 # Ignore log files
 logs
 logs/*
+
+# Ignore environment file
+*/.env
+pipeline/.env
