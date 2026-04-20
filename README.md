@@ -18,22 +18,50 @@
 
 ## Problem Definition
 
+### Problem Statement
+
+### Rationale
+
+### Motivation
+
+### Press Release
+
 
 ---
 
 ## Domain Exposition
+
+### Terminology
+
+### Domain Description
+
+### Background Reading
 
 
 ---
 
 ## Data Creation
 
+### Provenance
+
+### Code
+
+### Rationale
+
+### Bias Identification
+
+### Bias Mitigation
 
 
 ---
 
 ## Metadata
 
+### Implicit Schema
+
+### Data Summary
+
+### Data Dictionary
 
 
 ---
