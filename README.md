@@ -84,14 +84,29 @@ This project exists in domains concerned with finance, macroeconomics, and wealt
 
 ### Provenance
 
+This data is sourced from the Forbes World's Billionaires List. The Forbes platform provides a publicly-available real-time ranking of individuals in the world with a net worth greater that $1 billion. The particular data used in this analysis was scraped from the platform when it was last updated on August 20, 2025. It does not reflect the current state of the Forbes World's Billionaires List.
+
+The raw data was acquired as a single file from a public GitHub repository called `free-json-datasets`. This repo belongs to GitHub user `sharmadhiraj`. Within the `docs` folder, under the category labeled `economy-finance`, I downloaded the file `forbes_billionaires_list.json`. This file was manipulated locally in a data preparation notebook to produce the MongoDB database and all constituent documents used for this analysis.
+
 ### Code
+
+| Code | Description | Link |
+|------|-------------|------|
+| `data_prep.ipynb` | Loads in raw json file, connects to MongoDB, extracts individual documents, and inserts into database | [Link to Code](https://github.com/masonnicoletti/billionaire-analysis/blob/main/pipeline/data_prep.ipynb) |
 
 ### Rationale
 
+The fields included in each documents are all those that were reported from the raw `forbes_billionaires_list.json` file, sourced from the Forbes World's Billionaires List. My data preparation process did not remove or edit the values of any of these fields, ensuring that all the reported data was included in each document. The only fields added to documents was the `source_metadata` object, which includes several features that are standardized across all documents used in this analysis. These fields are not necessarily useful for the analysis results but provide contextual information about the data source.
+
+Uncertainty in the findings from this analysis can be attributed to the absense of up-to-date data. The data uploaded to this database is static, and it is reported from data as of August 20, 2025. As time carries on, the `current_worth`, `age`, and `rank` of the subjects of documents will continue to shift. With this in mind, I decided it was important to explicitly include the field, `updated_at`, in documents, inserted manually as part of a metadata object. Additionally, measure were taken throughout the analysis to continuously specify that findings are from past data and their relevance many vary by today's standards.
+
 ### Bias Identification
+
+Bias is a common point of contingency in net worth reporting. The reported net worth values for each subject on the Forbes Billionaires List is prone to misrepresentation due to a variety of factors. Underestimation of net worth is common due to the ownership of hidden assets. The ultrawealthy are incentivized to operate in the "hidden economy" and cover up as much monetary value as they can in order to preserve it. Overestimation can also be a problem, as the wealthy may decide to report inflated values, the media often tends to sensationalize net worth values of wealthy figures, and illiquid assets may be included in net worth calculations.
 
 ### Bias Mitigation
 
+Bias mitigation in net worth calculations requires a clear strategy for drawing calculations and collecting data from all the possible sources of information, as well as leveraging technology for asset valuation. Forbes calculates net worth by summing the value of all personal assets, including investments, private companies, property and possessions, cash, etc., and subtracting debts. Estimations are made when transparency is limited. In these cases, biases are mitigated by drawing additional information from SEC filings, interviews, court records, and analyst work. In analysis, these biases can be accounted for by studying the distribution of wealth and understanding that variations exist due to misrepresented values.
 
 ---
 
@@ -99,9 +114,42 @@ This project exists in domains concerned with finance, macroeconomics, and wealt
 
 ### Implicit Schema
 
+Each document in the `billionaires` collection within the `forbes` database contains data about one individual or family on the Forbes World's Billionaires List. All documents inserted in this collection should follow a standardized structure, displaying common fields for consistency. Recurring features in each document include `rank`, `name`, `last_name`, `source`, `industries`, `country`, `gender`, `age`, `current_worth`, `previous_worth`, and `image_url`. These fields are present across all documents extracted from the raw json-formatted data of Forbes billionaires. The `rank` field should be unique across all documents, establishing a natural procession of billionaires that can be validated by the `current_worth` field. The `industries` field stores any quantity of entries as an array of strings. The `_id` field is created upon insertion into MongoDB. Additionally, manually included in each document is a `soruce_metadata` object that holds fundamental aspects about the data source, including `title`, `subtitle`, and `updated_at`. The values for these fields are standardized across every current document in the collection, although than can vary upon the insertion of new data from an updated or additional source.
+
 ### Data Summary
+
+| Collection | Document Count | Description |
+|------------|----------------|-------------|
+| `billionaires` | 3109 | Contains documents for all individuals reported in the Forbes World's Billionaires List from August 20, 2025 |
 
 ### Data Dictionary
 
+| Name | Data Type | Description | Example |
+|------|-----------|-------------|---------|
+| _id | ObjectID | Unique identifier for document assinged upon insertion | ObjectID('69e4549bc450016f7d46f1e0') |
+| Rank | Integer | Ordered value of billionaire based on current worth | 10 |
+| Name | String | Full name of the billionaire | Warren Buffet |
+| Last Name | String | Last name of the billionaire | Buffet |
+| Source | String | Source from which the billionaire's wealth is derived | Berkshire Hathaway |
+| Industries | Array | List of industries the billionaire is associated with | ['Finance & Investments'] |
+| Country | String | Country of origin for the billionaire | United States |
+| Gender | String | Gender of the billionaire, indicated as 'M' or 'F' | M |
+| Age | Integer | Age of the billionaire in years | 95 |
+| Current Worth | Integer | Total value of all assets minus all liabilities; Net Worth | 144815736000 |
+| Previous Worth | Integer | Net worth one year prior to current worth | 143003432844 |
+| Image URL | String | URL to JPG image of billionaire | https://specials-images.forbesimg.com/imageserve/5babb7f1a7ea4342a948b79a/416x416.jpg |
+| Source Metadata | Object | Stores `title`, `subtitle`, and `updated_at` | {title: "Forbes Billionaires List", subtitle: "Up-to-date ranking of the world's wealthiest individuals as of August 20, 2025", updated_at: "August 20, 2025 09:42 AM UTC"} |
+| Title | String | Title of raw data source | Forbes Billionaires List |
+| Subtitle | String | Subtitle of raw data source | Up-to-date ranking of the world's wealthiest individuals as of August 20, 2025 |
+| Updated At | String | Date from which raw data was acquired | August 20, 2025 09:42 AM UTC |
+
+### Numerical Data Dictionary
+
+| Name | Mean | SD | Min | Max |Uncertainty | Rationale |
+|------|------|----|-----|-----|-------------|-----------|
+| Rank | 1554.87 | 897.64 | 1 | 3016 | Rank ± 2 | Subject to uncertainty in net worth calculations |
+| Age | 64.32 | 16.32 | 0 | 104 | Age ± 1 | Small correction for possibility of misreporting |
+| Current Worth | 5633608919.24 | 15518688176.11 | 0 | 413046544000 | Current Worth ± (0.1 * Current Worth) | Apply a 10% margin of error in net worth calculations |
+| Previous Worth | 5645819019.03 | 15696641441.60 | 0 | 416338889179 | Previous Worth ± (0.1 * Previous Worth) | Apply a 10% margin of error in net worth calculations |
 
 ---
