@@ -4,16 +4,20 @@
 
 ### Executive Summary
 
+The contents of this repository aim to explore billionaires by analyzing key characteristics and quantifying the total wealth of the this population. Using data reported from the Forbes World's Billionaires Rankings, this project implements MongoDB to store data in the document model. Exploratory data analysis is used to visualize the distribution of key characteristics within the billionaire population. Taking analysis a step further, regression was performed to model change in an individual billionaire's wealth, but no strong predictive relationships are found. Data visualizations are included in the figures folder, and a press release is composed to communicate findings to a general audience. Overall, this repository analyzes data about the world's billionaires, putting broader systemic-level concepts such as wealth disparity into discussion.
+
 ### Project Details
 
-| Spec | Value |
-|------|-------|
-| Name | Mason Nicoletti |
-| NetID | cxx6sw |
-| DOI | |
-| Press Release | |
-| Pipeline | |
-| License | |
+
+| Spec          | Value                                                                                                                                 |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Name          | Mason Nicoletti                                                                                                                       |
+| NetID         | cxx6sw                                                                                                                                |
+| DOI           |                                                                                                                                       |
+| Press Release | [Billionaires Can End World Hunger 50 Times Over!](https://github.com/masonnicoletti/billionaire-analysis/blob/main/press_release.md) |
+| Pipeline      |                                                                                                                                       |
+| License       |                                                                                                                                       |
+
 
 ---
 
@@ -35,6 +39,7 @@ The original problem was framed with regards to considering a comprehensive list
 
 ### Press Release
 
+[Billionaires Can End World Hunger 50 Times Over!](https://github.com/masonnicoletti/billionaire-analysis/blob/main/press_release.md)
 
 ---
 
@@ -42,23 +47,25 @@ The original problem was framed with regards to considering a comprehensive list
 
 ### Terminology
 
-| Term | Description |
-|------|-------------|
-| Bismarckian Welfare | The modern world's first state-led social insurance system |
-| Centibillionaire | An individual with a net worth exceeding $100 Billion |
-| Egalitarianism | Philosophical branch asserting the fundamental equality of all humans | 
-| Financial Asset | Intangible, liquid property with value derived from contractual claim |
-| Gini Coefficient | Statistical Measure of economic inequality (0 to 1) within a population |
-| Intergenerational Transmission | The transfer of wealth from older to younger generations |
-| Lorenz Curve | Graphical representation of income or wealth inequality in a population |
-| Macroeconomic | The overall economy or market system, focusing on large-scale phenomena |
-| Net Worth | The sum of all assets minus all liabilities |
-| Non-Financial Assets | Physical item with value derived from utility |
-| Philanthropy | Voluntary donation of personal income to the common good |
-| Redistributive Policies | Government actions that transfer wealth to reduce economic inequality |
-| Social Mobility | The ability to move between socioeconomic strata in a society | 
-| UHNWI | Ultra High Net Worth Individual; an individual with a net worth exceeding $30 Million |
-| Wealth Concentration | Uneven distribution of assets across a population |
+
+| Term                           | Description                                                                           |
+| ------------------------------ | ------------------------------------------------------------------------------------- |
+| Bismarckian Welfare            | The modern world's first state-led social insurance system                            |
+| Centibillionaire               | An individual with a net worth exceeding $100 Billion                                 |
+| Egalitarianism                 | Philosophical branch asserting the fundamental equality of all humans                 |
+| Financial Asset                | Intangible, liquid property with value derived from contractual claim                 |
+| Gini Coefficient               | Statistical Measure of economic inequality (0 to 1) within a population               |
+| Intergenerational Transmission | The transfer of wealth from older to younger generations                              |
+| Lorenz Curve                   | Graphical representation of income or wealth inequality in a population               |
+| Macroeconomic                  | The overall economy or market system, focusing on large-scale phenomena               |
+| Net Worth                      | The sum of all assets minus all liabilities                                           |
+| Non-Financial Assets           | Physical item with value derived from utility                                         |
+| Philanthropy                   | Voluntary donation of personal income to the common good                              |
+| Redistributive Policies        | Government actions that transfer wealth to reduce economic inequality                 |
+| Social Mobility                | The ability to move between socioeconomic strata in a society                         |
+| UHNWI                          | Ultra High Net Worth Individual; an individual with a net worth exceeding $30 Million |
+| Wealth Concentration           | Uneven distribution of assets across a population                                     |
+
 
 ### Domain Description
 
@@ -69,14 +76,16 @@ This project exists in domains concerned with finance, macroeconomics, and wealt
 **Background Reading Folder:**
 [Billionaire Analysis Domain Exposition](https://myuva-my.sharepoint.com/:f:/g/personal/cxx6sw_virginia_edu/IgD5DZS1v4NNRKqkYqB2-DgrAbpXC2J3SuYi9JWCt3YZCLM?e=TXutdr)
 
-| Title | Description | Link |
-|-------|-------------|------|
-| Forbes World’s Billionaires List: Facts And Figures | Describes the constituents of Forbes' ranking of billionaires, highlighting significant updates as of 2026 | [Forbes World's Billionaires List](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQBCQjU-ET5JSZjfLcVRC-NQAUbX8USOMoypy8jwHBrwVGk?e=qSRHDZ) |
-| World Ultra Wealth Report 2025 | Defines individuals classified as ultra-wealthy, and outlines the profile of this group of individuals | [World Ultra Wealth Report 2025](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQAUZNYuynPyS4tEndfFtPhJAV6g-qX_PQ-nKWzVcezWPKs?e=hsoyE3) |
-| Characteristics of Billionaires | Presents an analysis of billionaires based on demographic characteristics, with supporting data visualizations and modeling | [Characteristics of Billionaires](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQC1kYEqBfGnQIIObmA5v0PeASohgBpWe7GsSgC_HvJlzgc?e=zYTQIO)|
-| How Wealth Inequality Shapes Our Future | Provides a narrative account of the impact of wealth inequality, then dives into theory and analysis of this issue | [How Wealth Inequality Shapes Our Future](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQCtqAhK748nRo2z_uC7XBAPAUpTgr0IMd3cCNd2Xwp5kl4?e=tmlyUK) |
-| Wealth Without Limits: in Defense of Billionaires | Defends the existence of billionaires and justifies their positive impact across society | [Wealth Without Limits in Defense of Billionaires](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQC4TLBPpWh3SbNUjg7yTeuHAaLf2JMV6hSQ8xW7Vo5XO4w?e=smir0r)
-| The Wealth of Billionaires | Examines the how the wealth of billionaires ties to their respective companies and investments | [The Wealth of Billionaires](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQDoceq4O3oLSqGkGgmEn7a5Ae1sOsDkDKVQwDolBgXTw-A?e=l3cOxh) |
+
+| Title                                               | Description                                                                                                                 | Link                                                                                                                                                                            |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Forbes World’s Billionaires List: Facts And Figures | Describes the constituents of Forbes' ranking of billionaires, highlighting significant updates as of 2026                  | [Forbes World's Billionaires List](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQBCQjU-ET5JSZjfLcVRC-NQAUbX8USOMoypy8jwHBrwVGk?e=qSRHDZ)                 |
+| World Ultra Wealth Report 2025                      | Defines individuals classified as ultra-wealthy, and outlines the profile of this group of individuals                      | [World Ultra Wealth Report 2025](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQAUZNYuynPyS4tEndfFtPhJAV6g-qX_PQ-nKWzVcezWPKs?e=hsoyE3)                   |
+| Characteristics of Billionaires                     | Presents an analysis of billionaires based on demographic characteristics, with supporting data visualizations and modeling | [Characteristics of Billionaires](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQC1kYEqBfGnQIIObmA5v0PeASohgBpWe7GsSgC_HvJlzgc?e=zYTQIO)                  |
+| How Wealth Inequality Shapes Our Future             | Provides a narrative account of the impact of wealth inequality, then dives into theory and analysis of this issue          | [How Wealth Inequality Shapes Our Future](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQCtqAhK748nRo2z_uC7XBAPAUpTgr0IMd3cCNd2Xwp5kl4?e=tmlyUK)          |
+| Wealth Without Limits: in Defense of Billionaires   | Defends the existence of billionaires and justifies their positive impact across society                                    | [Wealth Without Limits in Defense of Billionaires](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQC4TLBPpWh3SbNUjg7yTeuHAaLf2JMV6hSQ8xW7Vo5XO4w?e=smir0r) |
+| The Wealth of Billionaires                          | Examines the how the wealth of billionaires ties to their respective companies and investments                              | [The Wealth of Billionaires](https://myuva-my.sharepoint.com/:u:/g/personal/cxx6sw_virginia_edu/IQDoceq4O3oLSqGkGgmEn7a5Ae1sOsDkDKVQwDolBgXTw-A?e=l3cOxh)                       |
+
 
 ---
 
@@ -90,9 +99,11 @@ The raw data was acquired as a single file from a public GitHub repository calle
 
 ### Code
 
-| Code | Description | Link |
-|------|-------------|------|
+
+| Code              | Description                                                                                           | Link                                                                                                      |
+| ----------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | `data_prep.ipynb` | Loads in raw json file, connects to MongoDB, extracts individual documents, and inserts into database | [Link to Code](https://github.com/masonnicoletti/billionaire-analysis/blob/main/pipeline/data_prep.ipynb) |
+
 
 ### Rationale
 
@@ -118,38 +129,45 @@ Each document in the `billionaires` collection within the `forbes` database cont
 
 ### Data Summary
 
-| Collection | Document Count | Description |
-|------------|----------------|-------------|
-| `billionaires` | 3109 | Contains documents for all individuals reported in the Forbes World's Billionaires List from August 20, 2025 |
+
+| Collection     | Document Count | Description                                                                                                  |
+| -------------- | -------------- | ------------------------------------------------------------------------------------------------------------ |
+| `billionaires` | 3109           | Contains documents for all individuals reported in the Forbes World's Billionaires List from August 20, 2025 |
+
 
 ### Data Dictionary
 
-| Name | Data Type | Description | Example |
-|------|-----------|-------------|---------|
-| _id | ObjectID | Unique identifier for document assinged upon insertion | ObjectID('69e4549bc450016f7d46f1e0') |
-| Rank | Integer | Ordered value of billionaire based on current worth | 10 |
-| Name | String | Full name of the billionaire | Warren Buffet |
-| Last Name | String | Last name of the billionaire | Buffet |
-| Source | String | Source from which the billionaire's wealth is derived | Berkshire Hathaway |
-| Industries | Array | List of industries the billionaire is associated with | ['Finance & Investments'] |
-| Country | String | Country of origin for the billionaire | United States |
-| Gender | String | Gender of the billionaire, indicated as 'M' or 'F' | M |
-| Age | Integer | Age of the billionaire in years | 95 |
-| Current Worth | Integer | Total value of all assets minus all liabilities; Net Worth | 144815736000 |
-| Previous Worth | Integer | Net worth one year prior to current worth | 143003432844 |
-| Image URL | String | URL to JPG image of billionaire | https://specials-images.forbesimg.com/imageserve/5babb7f1a7ea4342a948b79a/416x416.jpg |
-| Source Metadata | Object | Stores `title`, `subtitle`, and `updated_at` | {title: "Forbes Billionaires List", subtitle: "Up-to-date ranking of the world's wealthiest individuals as of August 20, 2025", updated_at: "August 20, 2025 09:42 AM UTC"} |
-| Title | String | Title of raw data source | Forbes Billionaires List |
-| Subtitle | String | Subtitle of raw data source | Up-to-date ranking of the world's wealthiest individuals as of August 20, 2025 |
-| Updated At | String | Date from which raw data was acquired | August 20, 2025 09:42 AM UTC |
+
+| Name            | Data Type | Description                                                | Example                                                                                                                                                                        |
+| --------------- | --------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| _id             | ObjectID  | Unique identifier for document assinged upon insertion     | ObjectID('69e4549bc450016f7d46f1e0')                                                                                                                                           |
+| Rank            | Integer   | Ordered value of billionaire based on current worth        | 10                                                                                                                                                                             |
+| Name            | String    | Full name of the billionaire                               | Warren Buffet                                                                                                                                                                  |
+| Last Name       | String    | Last name of the billionaire                               | Buffet                                                                                                                                                                         |
+| Source          | String    | Source from which the billionaire's wealth is derived      | Berkshire Hathaway                                                                                                                                                             |
+| Industries      | Array     | List of industries the billionaire is associated with      | ['Finance & Investments']                                                                                                                                                      |
+| Country         | String    | Country of origin for the billionaire                      | United States                                                                                                                                                                  |
+| Gender          | String    | Gender of the billionaire, indicated as 'M' or 'F'         | M                                                                                                                                                                              |
+| Age             | Integer   | Age of the billionaire in years                            | 95                                                                                                                                                                             |
+| Current Worth   | Integer   | Total value of all assets minus all liabilities; Net Worth | 144815736000                                                                                                                                                                   |
+| Previous Worth  | Integer   | Net worth one year prior to current worth                  | 143003432844                                                                                                                                                                   |
+| Image URL       | String    | URL to JPG image of billionaire                            | [https://specials-images.forbesimg.com/imageserve/5babb7f1a7ea4342a948b79a/416x416.jpg](https://specials-images.forbesimg.com/imageserve/5babb7f1a7ea4342a948b79a/416x416.jpg) |
+| Source Metadata | Object    | Stores `title`, `subtitle`, and `updated_at`               | {title: "Forbes Billionaires List", subtitle: "Up-to-date ranking of the world's wealthiest individuals as of August 20, 2025", updated_at: "August 20, 2025 09:42 AM UTC"}    |
+| Title           | String    | Title of raw data source                                   | Forbes Billionaires List                                                                                                                                                       |
+| Subtitle        | String    | Subtitle of raw data source                                | Up-to-date ranking of the world's wealthiest individuals as of August 20, 2025                                                                                                 |
+| Updated At      | String    | Date from which raw data was acquired                      | August 20, 2025 09:42 AM UTC                                                                                                                                                   |
+
 
 ### Numerical Data Dictionary
 
-| Name | Mean | SD | Min | Max |Uncertainty | Rationale |
-|------|------|----|-----|-----|-------------|-----------|
-| Rank | 1554.87 | 897.64 | 1 | 3016 | Rank ± 2 | Subject to uncertainty in net worth calculations |
-| Age | 64.32 | 16.32 | 0 | 104 | Age ± 1 | Small correction for possibility of misreporting |
-| Current Worth | 5633608919.24 | 15518688176.11 | 0 | 413046544000 | Current Worth ± (0.1 * Current Worth) | Apply a 10% margin of error in net worth calculations |
-| Previous Worth | 5645819019.03 | 15696641441.60 | 0 | 416338889179 | Previous Worth ± (0.1 * Previous Worth) | Apply a 10% margin of error in net worth calculations |
+
+| Feature           | Mean          | SD             | Min | Max          | Uncertainty                             | Rationale                                             |
+| -------------- | ------------- | -------------- | --- | ------------ | --------------------------------------- | ----------------------------------------------------- |
+| Rank           | 1554.87       | 897.64         | 1   | 3016         | Rank ± 2                                | Subject to uncertainty in net worth calculations      |
+| Age            | 64.32         | 16.32          | 0   | 104          | Age ± 1                                 | Small correction for possibility of misreporting      |
+| Current Worth  | 5633608919.24 | 15518688176.11 | 0   | 413046544000 | Current Worth ± (0.1 * Current Worth)   | Apply a 10% margin of error in net worth calculations |
+| Previous Worth | 5645819019.03 | 15696641441.60 | 0   | 416338889179 | Previous Worth ± (0.1 * Previous Worth) | Apply a 10% margin of error in net worth calculations |
+
 
 ---
+
