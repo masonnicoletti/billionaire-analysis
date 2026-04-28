@@ -16,7 +16,7 @@ The contents of this repository aim to explore billionaires by analyzing key cha
 | DOI           |                                                                                                                                       |
 | Press Release | [Billionaires Can End World Hunger 50 Times Over!](https://github.com/masonnicoletti/billionaire-analysis/blob/main/press_release.md) |
 | Pipeline      | [Data Analysis](https://github.com/masonnicoletti/billionaire-analysis/blob/main/pipeline/data_analysis.ipynb)                        |
-| License       |                                                                                                                                       |
+| License       | [MIT License](https://github.com/masonnicoletti/billionaire-analysis/blob/main/LICENSE)                                               |
 
 
 ---
