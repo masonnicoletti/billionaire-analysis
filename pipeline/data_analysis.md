@@ -9,14 +9,12 @@ import matplotlib.pyplot as plt
 import os
 import pymongo
 import logging
-import warnings
 from dotenv import load_dotenv
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.linear_model import ElasticNet
 from sklearn.metrics import r2_score, mean_squared_error
-from sklearn.exceptions import ConvergenceWarning
 ```
 
 
