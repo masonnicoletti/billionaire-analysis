@@ -13,7 +13,7 @@ The contents of this repository aim to explore billionaires by analyzing key cha
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | Name          | Mason Nicoletti                                                                                                                       |
 | NetID         | cxx6sw                                                                                                                                |
-| DOI           |                                                                                                                                       |
+| DOI           | [![DOI](https://zenodo.org/badge/1215332362.svg)](https://doi.org/10.5281/zenodo.19869486)                                            |
 | Press Release | [Billionaires Can End World Hunger 50 Times Over!](https://github.com/masonnicoletti/billionaire-analysis/blob/main/press_release.md) |
 | Pipeline      | [Data Analysis](https://github.com/masonnicoletti/billionaire-analysis/blob/main/pipeline/data_analysis.ipynb)                        |
 | License       | [MIT License](https://github.com/masonnicoletti/billionaire-analysis/blob/main/LICENSE)                                               |
