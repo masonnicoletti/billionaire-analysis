@@ -2,9 +2,9 @@
 
 #### April 28, 2026
 
-## Comprehending Wealth
+## Vast Wealth
 
-It's no secret that wealth is disproportionately concentrated across our society. Amazingly, a small subset of just over 3,000 individuals holds more wealth than the bottom 50% of the United States. Simply imagine all the things this amount of wealth can do for the world.
+It's no secret that wealth is disproportionately concentrated across our society. Amazingly, a small subset of just over 3,000 individuals holds more wealth than the bottom 50% of the United States. Simply imagine all the things this amount of wealth can do.
 
 ## The Issue with Wealth Disparity
 
@@ -12,11 +12,11 @@ Wealth disparity is sometimes considered to be one of the most divisive and syst
 
 When wealth disparity increases, economic and social mobility decrease. It hinders opportunities for lower class individuals to accumulate wealth. The wealthiest individuals also gain more political power, which allows many to exert influence in favor of maintaining their wealth and thus creating a cycle of power and wealth. Overall, increased wealth inequality weakens the democratic ideals of our society. This issue can also be tied to racial problems, distrust in government, and increased political polarization.
 
-Additionally, much discourse exists about whether billionaires should be allowed to exist or not. Many advocates in support of billionaires draw attention to the benefits they bring for the economy. Wealth trickles down from the ultrawealthy to the working class populations. Additionally billionaires are some of the largest investors, and they have funded the growth of the most successful but also beneficial companies for society. Many experts cite profound economic growth to our economic model and the incentive to accumulate such levels of wealth. Under these controversial circumstances, there is plenty of disagreement that has emerged about whether billionaire status should fundamentally be attainable.
+Additionally, much discourse exists about whether billionaires should be allowed to exist or not. Many advocates in support of billionaires draw attention to the benefits they bring for the economy. Wealth trickles down from the ultrawealthy to the working class populations. Additionally billionaires are some of the largest investors, and they have funded the growth of companies that are very successful but also beneficial for our society. Many experts cite profound economic growth to our economic model and the incentive to accumulate such great levels of wealth. Under these controversial circumstances, there is plenty of disagreement that has emerged about whether billionaire status should fundamentally be attainable.
 
 ## Analyzing the Billionaire Population
 
-Keeping the core ideas above in mind, it is important to explore how and why wealth accumulates where it does. Referencing the Forbes World's Billionaires Ranking, the following analytics were produced to better understand how billionaires are distributed as a population themselves, and how their population relates in comparison with the general population. As of August 2025 there were over 3,100 billionaires in the world. This number has increased by several hundred since then. From this population, roughly 87% are male and 13% are female. The largest percentage of these billionaires hail from the United States (29%), followed by China (16%) and India (7%). The median age of billionaires is 66 years old, which is far greater than the US median age of 39 years and the global median age of 31 years. The remaining billionaires are dispersed across the globe, though a high concentration are from Europe and East Asia. Analyzing the industries where these billionaires acquired their wealth, the greatest percentage achieved their status through finance and investments. After that, the tech industry has produced the greatest amount of billionaires.
+Keeping the core ideas above in mind, it is important to explore how and why this wealth accumulates the way it does. Referencing the Forbes World's Billionaires Ranking, the following analytics were produced to better understand how billionaires are distributed as a population themselves, and how their population relates in comparison with the general population. As of August 2025 there were over 3,100 billionaires in the world. This number has increased by several hundred since then. From this population, roughly 87% are male and 13% are female. The largest percentage of these billionaires hail from the United States (29%), followed by China (16%) and India (7%). The remaining billionaires are dispersed across the globe, though a high concentration are from Europe and East Asia. The median age of billionaires is 66 years old, which is far greater than the US median age of 39 years and the global median age of 31 years. Analyzing the industries where these billionaires acquired their wealth, the greatest percentage achieved their status through finance and investments. After that, the tech industry has produced the second largest amount of billionaires.
 
 ![Age Distribution of Billionaires](./figures/age_distribution.png)
 
